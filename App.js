@@ -24,7 +24,7 @@ export default class App extends Component {
     Animated.sequence([
       Animated.timing(this.state.progress, {
         toValue: 1,
-        duration: 3000,
+        duration: 1000,
         easing: Easing.linear,
       }),
       Animated.timing(this.state.progress, {
@@ -37,7 +37,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={{flex: 1}}>
-        <LottieView source={require('./animations/loading.json')} progress={this.state.progress} />
+        <LottieView source={require('./animations/bounching_ball.json')} progress={this.state.progress} />
       </View>
     );
   }
